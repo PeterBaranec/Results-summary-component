@@ -7,40 +7,60 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/index.css">
 
   <title>Frontend Mentor | Results summary component</title>
 
 </head>
 
 <body>
-  <section>
-    <article class="result">
-      <h1 class="result__title">Your Result</h1>
-      <p class="result__score">76</p>
-      <p class="result__max-score">of 100</p>
-      <h1 class="result__feedback">Great</h1>
-      <p class="result__feedback-description">You scored higher than 65% of the people who have taken these tests.</p>
-    </article>
-    <div class="summary">
-      <div class="summary__item summary__item--reaction">
-        <span class="summary__label">Reaction</span>
-        <span class="summary__score">80 / 100</span>
-      </div>
-      <div class="summary__item summary__item--memory">
-        <span class="summary__label">Memory</span>
-        <span class="summary__score">92 / 100</span>
-      </div>
-      <div class="summary__item summary__item--verbal">
-        <span class="summary__label">Verbal</span>
-        <span class="summary__score">61 / 100</span>
-      </div>
-      <div class="summary__item summary__item--visual">
-        <span class="summary__label">Visual</span>
-        <span class="summary__score">72 / 100</span>
-      </div>
-      <button class="summary__button">Continue</button>
-    </div>
-  </section>
+  <main class="flex">
+    <section class="container">
+      <article class="result">
+        <h2 class="result__title">Your Result</h2>
+        <div class="circle">
+          <span class="result__score">76</span>
+          <span class="result__max-score">of 100</span>
+        </div>
+        <h1 class="result__feedback">Great</h1>
+        <p class="result__feedback-description">Your preformance exceed 65% of the people conducting the test here!</p>
+      </article>
+      <article class="summary">
+        <h2 class="summary__title">Summary</h2>
+        <div class="summary__item summary__item--reaction">
+          <span>
+            <img class="summary__img" src="/assets/images/icon-reaction.svg" alt="reaction svg icon">
+            <p class="summary__label summary__label--reaction">Reaction</p>
+          </span>
+          <p class="summary__score"><b>80</b> / 100</p>
+        </div>
+        <div class="summary__item summary__item--memory">
+          <span>
+            <img class="summary__img" src="/assets/images/icon-memory.svg" alt="memory svg icon">
+            <p class="summary__label summary__label--memory">Memory</p>
+          </span>
+          <p class="summary__score"><b>92</b> / 100</p>
+        </div>
+        <div class="summary__item summary__item--verbal">
+          <span>
+            <img class="summary__img" src="/assets/images/icon-verbal.svg" alt="verbal svg icon">
+            <p class="summary__label summary__label--verbal">Verbal</p>
+          </span>
+          <p class="summary__score"><b>61</b> / 100</p>
+        </div>
+        <div class="summary__item summary__item--visual">
+          <span>
+            <img class="summary__img" src="/assets/images/icon-visual.svg" alt="visual svg icon">
+            <p class="summary__label summary__label--visual">Visual</p>
+          </span>
+          <p class="summary__score"><b>72</b> / 100</p>
+        </div>
+        <button class="summary__button">Continue</button>
+      </article>
+    </section>
+  </main>
+
+
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
