@@ -164,7 +164,7 @@ body {
     color: var(--clr-neutral-white);
 }
 
-.results__feedback {
+.result__feedback {
     font-size: var(--fs-700);
     font-weight: var(--fw-bold);
 }
